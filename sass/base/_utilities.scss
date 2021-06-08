@@ -1,0 +1,5 @@
+@use '../abstracts' as *;
+
+.shadow-dark {
+  box-shadow: 2rem 6rem rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  // $gray-light-2
+  background-color: red;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: $gray-dark-1;
+  // flex: flex-grow, flex-shrink, flex-basis
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  // background-color: $color-white;
+  background-color: green;
+  flex: 1;
+}
