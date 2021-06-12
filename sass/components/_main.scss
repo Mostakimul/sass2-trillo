@@ -1,0 +1,72 @@
+@use '../abstracts/' as *;
+
+// Gallery Section
+.gallery {
+  display: flex;
+
+  &__item {
+  }
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+// overview section
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $gray-light-2;
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &__stars {
+    margin-right: auto;
+    display: flex;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: $primary;
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-location {
+    margin-right: 0.5rem;
+  }
+
+  &__rating {
+    background-color: $primary;
+    margin-left: 3rem;
+    color: $color-white;
+    padding: 0 2.25rem;
+    align-self: stretch;
+
+    @include flexCenter;
+    flex-direction: column;
+
+    &-avarage {
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-bottom: -0.3rem;
+    }
+    &-count {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.btn-inline {
+  border: none;
+  color: $primary;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $gray-dark-1;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}

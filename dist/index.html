@@ -24,9 +24,10 @@
       <form action="#" class="search">
         <input type="text" class="search__input" placeholder="Search Hotel">
         <button class="search__button">
-          <svg class="search__icon icon">
-            <use xlink:href="/sprite.1f2884c6.svg"></use>
-          </svg>
+          <!-- <svg class="search__icon icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg> -->
+          <img src="/magnifying-glass.239082b5.svg" alt="magnifying-glass">
         </button>
       </form>
 
@@ -34,16 +35,20 @@
       <nav class="user-nav">
         <!-- Bookmark Icon -->
         <div class="user-nav__icon-box">
-          <svg class="user-nav__icon">
-            <use xlink:href="/sprite.1f2884c6.svg"></use>
-          </svg>
+          <!-- <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+          </svg> -->
+
+          <img src="/bookmark.f5c9fe71.svg" alt="bookmark">
+
           <span class="user-nav__notification">7</span>
         </div>
         <!-- Chat Icon -->
         <div class="user-nav__icon-box">
-          <svg class="user-nav__icon icon-chat">
-            <use xlink:href="/sprite.1f2884c6.svg"></use>
-          </svg>
+          <!-- <svg class="user-nav__icon icon-chat">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg> -->
+          <img src="/chat.36c33401.svg" alt="chat">
           <span class="user-nav__notification">3</span>
         </div>
         <!-- Top Right User Image -->
@@ -62,9 +67,11 @@
         <ul class="side-nav">
           <li class="side-nav__item side-nav__item--active">
             <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use xlink:href="/sprite.1f2884c6.svg"></use>
-              </svg>
+              <!-- <svg class="side-nav__icon" role="img">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg> -->
+              <img src="/home.ae49fbc8.svg" alt="Home Icon" class="side-nav__icon">
+
               <span>Hotel</span>
             </a>
           </li>
@@ -73,6 +80,7 @@
               <svg class="side-nav__icon">
                 <use xlink:href="/sprite.1f2884c6.svg"></use>
               </svg>
+              <!-- <img src="img/SVG/aircraft.svg" alt="Home Icon" class="side-nav__icon"> -->
               <span>Flight</span>
             </a>
           </li>
@@ -99,7 +107,62 @@
       </nav>
       <!-- Main Content -->
       <main class="hotel-view">
-        Hotel View
+        <!-- Gallery -->
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="/hotel-1.f1699314.jpg" alt="Hotel 1" class="gallery__photo">
+          </figure>
+          <figure class="gallery__item">
+            <img src="/hotel-2.84b49dd0.jpg" alt="Hotel 2" class="gallery__photo">
+          </figure>
+          <figure class="gallery__item">
+            <img src="/hotel-3.cae55434.jpg" alt="Hotel 3" class="gallery__photo">
+          </figure>
+        </div>
+
+        <!-- Overview -->
+        <div class="overview">
+          <h1 class="overview__heading">
+            Hotel Las Palmas
+          </h1>
+          <!-- star -->
+          <div class="overview__stars">
+            <!-- <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg> -->
+            <img src="/star.191de8dc.svg" alt="Home Icon" class="overview__icon-star">
+            <img src="/star.191de8dc.svg" alt="Home Icon" class="overview__icon-star">
+            <img src="/star.191de8dc.svg" alt="Home Icon" class="overview__icon-star">
+            <img src="/star.191de8dc.svg" alt="Home Icon" class="overview__icon-star">
+            <img src="/star.191de8dc.svg" alt="Home Icon" class="overview__icon-star">
+          </div>
+          <!-- Location -->
+          <div class="overview__location">
+            <!-- <svg class="overview__icon-location">
+              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+            </svg> -->
+            <img src="/location-pin.dffaf423.svg" alt="">
+            <button class="btn-inline">Albufeira, Portugal</button>
+          </div>
+
+          <!-- Oveerview rating -->
+          <div class="overview__rating">
+            <div class="overview__rating-avarage">8.6</div>
+            <div class="overview__rating-count">550 votes</div>
+          </div>
+        </div>
       </main>
     </div>
   </div>

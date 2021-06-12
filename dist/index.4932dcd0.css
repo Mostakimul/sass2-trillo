@@ -118,6 +118,34 @@ body {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
 .shadow-dark {
   box-shadow: 2rem 6rem rgba(0, 0, 0, 0.3);
 }
@@ -173,13 +201,88 @@ body {
   padding: 2.5rem;
   color: #ccc;
 }
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f4f2f2;
+}
+.overview__heading {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+.overview__stars {
+  margin-right: auto;
+  display: flex;
+}
+.overview__icon-star, .overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #eb2f64;
+}
+.overview__location {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.overview__icon-location {
+  margin-right: 0.5rem;
+}
+.overview__rating {
+  background-color: #eb2f64;
+  margin-left: 3rem;
+  color: #fff;
+  padding: 0 2.25rem;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.overview__rating-avarage {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: -0.3rem;
+}
+.overview__rating-count {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.btn-inline {
+  border: none;
+  color: #eb2f64;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-inline:hover {
+  color: #333;
+}
+.btn-inline:focus {
+  outline: none;
+  -webkit-animation: pulsate 1s infinite;
+          animation: pulsate 1s infinite;
+}
 .header {
   height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  border-bottom: #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
   font-size: 1.4rem;
 }
 .logo {
@@ -289,7 +392,7 @@ body {
   justify-content: space-between;
 }
 .hotel-view {
-  background-color: green;
+  background-color: #fff;
   flex: 1;
 }
 /*# sourceMappingURL=index.4932dcd0.css.map */
