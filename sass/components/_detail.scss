@@ -6,6 +6,14 @@
   font-size: 1.4rem;
   background-color: $gray-light-2;
   border-bottom: 1px solid $gray-light-2;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -14,6 +22,15 @@
   flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }
 
 .user-reviews {
@@ -73,8 +90,9 @@
     margin-right: auto;
   }
 
-  // &__friends {
-  // }
+  &__friends {
+    display: flex;
+  }
 
   &__photo {
     box-sizing: content-box;
@@ -84,7 +102,7 @@
     border: 3px solid $color-white;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -93,6 +111,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 2rem;
