@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+@mixin boxShadow {
+  box-shadow: 0 2rem 5rem rgba(#000, 0.06);
+}
+
 // Responsive Media query
 
 /*
