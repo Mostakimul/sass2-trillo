@@ -414,11 +414,18 @@ body {
   width: 1rem;
   height: 1rem;
   margin-right: 0.7rem;
-  background-color: #eb2f64;
-  -webkit-mask-image: url(chevron-thin-right.653d4673.svg);
-  mask-image: url(chevron-thin-right.653d4673.svg);
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  background-image: url(chevron-thin-right.653d4673.svg);
+  background-size: cover;
+}
+@supports ((-webkit-mask-image: url()) or (mask-image: url())) {
+  .list__item::before {
+    background-color: #eb2f64;
+    -webkit-mask-image: url(chevron-thin-right.653d4673.svg);
+    mask-image: url(chevron-thin-right.653d4673.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-image: none;
+  }
 }
 .recommend {
   font-size: 1.3rem;
